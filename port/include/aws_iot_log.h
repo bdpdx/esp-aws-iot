@@ -39,6 +39,6 @@
 #define FUNC_ENTRY ESP_LOGV("aws_iot", "FUNC_ENTRY:   %s L#%d \n", __func__, __LINE__)
 #define FUNC_EXIT_RC(x) \
     do {                                                                \
-        ESP_LOGV("aws_iot", "FUNC_EXIT:   %s L#%d Return Code : %d \n", __func__, __LINE__, x); \
+        ESP_LOGV("aws_iot", "FUNC_EXIT:   %s L#%d Return Code : %d \n", __func__, __LINE__, (int)(x)); \
         return x; \
     } while(0)

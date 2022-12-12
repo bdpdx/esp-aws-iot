@@ -67,7 +67,7 @@ uint32_t left_ms(Timer *timer) {
 
 void countdown_sec(Timer *timer, uint32_t timeout) {
     if (timeout > UINT32_MAX / 1000) {
-        ESP_LOGE(TAG, "timeout is out of range: %ds", timeout);
+        ESP_LOGE(TAG, "timeout is out of range: %lus", timeout);
     }
     countdown_ms(timer, timeout * 1000);
 }

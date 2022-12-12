@@ -21,6 +21,6 @@ set(COMPONENT_SRCS "${aws_sdk_dir}/aws_iot_jobs_interface.c"
                    "port/threads_freertos.c"
                    "port/timer.c")
 
-set(COMPONENT_REQUIRES "mbedtls")
+set(COMPONENT_REQUIRES "mbedtls vfs")
 
 register_component()
